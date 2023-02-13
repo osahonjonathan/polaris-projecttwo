@@ -1,0 +1,27 @@
+
+:host ::ng-deep  .first-card {
+
+    width: 360px;
+    height: 200px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    
+    
+   
+
+
+    
+}
+
+.accountsummary-cards {
+    display: flex;
+    
+    margin-top: 30px;
+    justify-content: space-between;
+    
+   
+    
+    // gap:20px;
+}

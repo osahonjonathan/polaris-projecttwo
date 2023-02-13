@@ -1,0 +1,28 @@
+
+:host ::ng-deep  .second-card {
+
+    width: 550px;
+    height: 450px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+
+
+    
+}
+
+.rowone-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowtwo-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 250px;
+    height: 150px;
+}

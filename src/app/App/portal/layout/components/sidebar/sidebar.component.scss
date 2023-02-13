@@ -1,0 +1,82 @@
+
+.visible {
+    display: none;
+  }
+  
+  .sidenav {
+      // height: 100%;
+      // width: 200px;
+      
+      // position: absolute;
+      margin-top: 60px;
+      
+      // background: rgba(204, 188, 252, 0.3);
+     
+      
+      padding-top: 20px;
+    }
+  
+    ul {
+      list-style-type: none;
+    }
+  
+    .sidenav ul li {
+      transition: 0.3s ease-in;
+      transition: 0.3s ease-in;
+      // background: rgba(204, 188, 252, 0.15);
+     
+      
+    }
+    
+    .sidenav a {
+      display: block;
+      color: white;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    .sidenav i {
+      font-size: 12px;
+      margin-right: 16px;
+    }
+    
+    .sidenav p {
+      display: inline-block;
+      color: #61297F;
+      font-weight: 500;
+      font-size: 15px;
+      vertical-align: middle;
+      margin: 0;
+    }
+    
+    .sidenav .active {
+      background-color: #61297F;
+      color: white;
+      border-radius: 16px 0px 0px 0px;
+      
+    }
+  
+    .sidenav .active p {
+      background-color: #61297F;
+      color: white;
+    }
+  
+    .activelink {
+  
+      background-color: #61297F;
+      color: white;
+      border-radius: 16px 0px 0px 0px;
+      
+  
+    }
+  
+    .activelink p {
+      color: white;
+    }
+    
+    // .activelink > * {
+    //   background: $grape_color;
+    //   color: #fff;
+    //   border-radius: 16px 0px 0px 0px;
+     
+    // }
