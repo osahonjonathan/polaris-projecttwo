@@ -8,7 +8,7 @@ import { Router,  NavigationEnd } from '@angular/router';
 })
 export class SidebarComponent {
 
-  @Input() visible = false;
+  @Input() visible!:boolean
   
 
   

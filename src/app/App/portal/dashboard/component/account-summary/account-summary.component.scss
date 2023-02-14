@@ -1,7 +1,7 @@
 
 :host ::ng-deep  .first-card {
 
-    width: 360px;
+    // width: 360px;
     height: 200px;
     padding: 25px;
     border-radius: 5px;
@@ -16,10 +16,14 @@
 }
 
 .accountsummary-cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     
-    margin-top: 30px;
-    justify-content: space-between;
+    margin-top: 16px;
+    grid-gap: 1em;
+    grid-template-rows: 16em 16em;
+    height: 250px;
+    
     
    
     

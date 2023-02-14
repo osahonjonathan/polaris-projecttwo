@@ -1,4 +1,4 @@
-import { Component,EventEmitter,Output, OnInit } from '@angular/core';
+import { Component,EventEmitter,Output, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 
 
 @Component({
@@ -6,14 +6,21 @@ import { Component,EventEmitter,Output, OnInit } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
-  
-@Output() toggle = new EventEmitter();
+export class NavbarComponent  {
+  // ngOnChanges(changes: SimpleChanges): void {
+  //   throw new Error('Method not implemented.');
+  // }
 
-showSidebar = false;
+   
 
-toggleSidebar() {
-this.showSidebar = !this.showSidebar;
-}
+  @Output() toggle: EventEmitter<string> = new EventEmitter();
+
+  toggleSidebar() {
+    this.toggle.emit('wassup');
+  }
+
+
+
+
 
 }

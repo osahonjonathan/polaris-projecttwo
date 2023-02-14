@@ -2,10 +2,11 @@
 
 <div class="layout">
 
-  <app-navbar  *ngIf="!(_router.url === '/login' || _router.url === '/')" (click)="toggleSidebar()"  class="nav-bar"></app-navbar>
-  <div class="main-container">
+  <app-navbar (toggle)="togglebar()"  *ngIf="!(_router.url === '/login' || _router.url === '/')"   class="nav-bar"></app-navbar>
+  <div [ngClass]="visible ? 'mainnav' : 'main'">
 
-    <app-sidebar *ngIf="showSidebar && !(_router.url === '/login' || _router.url === '/')" class="side-bar"></app-sidebar>
+    <app-sidebar  [visible]=visible *ngIf="visible && !(_router.url === '/login' || _router.url === '/')" [@inOutAnimation] class="side-bar"></app-sidebar>
+    <!-- <app-sidebar  [visible]=visible *ngIf="  !(_router.url === '/login' || _router.url === '/')" class="side-bar"></app-sidebar> -->
 
     <router-outlet ></router-outlet>
     
