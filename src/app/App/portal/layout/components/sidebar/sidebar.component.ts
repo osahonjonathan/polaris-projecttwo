@@ -1,5 +1,6 @@
 import { Component,Input,OnInit } from '@angular/core';
 import { Router,  NavigationEnd } from '@angular/router';
+import { AuthService } from 'src/app/App/landingpage/auth.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -14,7 +15,7 @@ export class SidebarComponent {
   
   currentRoute!: string;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private authservice:AuthService) {
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.currentRoute = event.url;
@@ -23,6 +24,11 @@ export class SidebarComponent {
   }
 
   ngOnInit(): void {
+  }
+
+  logout(){
+    this.authservice.logout
+    this.router.navigate(['/login']);
   }
 
 }

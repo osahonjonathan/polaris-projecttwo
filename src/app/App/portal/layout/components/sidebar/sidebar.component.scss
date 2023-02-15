@@ -38,6 +38,7 @@
       color: white;
       padding: 16px;
       text-decoration: none;
+      cursor: pointer;
     }
     
     .sidenav i {
@@ -57,8 +58,12 @@
     .sidenav .active {
       background-color: #61297F;
       color: white;
-      border-radius: 16px 0px 0px 0px;
+      border-radius: 0px 0px 0px 0px;
       
+    }
+
+    .sidenav:hover {
+      background-color: #61297F;
     }
   
     .sidenav .active p {
@@ -70,7 +75,7 @@
   
       background-color: #61297F;
       color: white;
-      border-radius: 16px 0px 0px 0px;
+      border-radius: 0px 0px 0px 0px;
       
   
     }
@@ -78,6 +83,13 @@
     .activelink p {
       color: white;
     }
+
+    .logout {
+      margin-left: 26px;
+      margin-top: 440px;
+    }
+
+
     
     // .activelink > * {
     //   background: $grape_color;

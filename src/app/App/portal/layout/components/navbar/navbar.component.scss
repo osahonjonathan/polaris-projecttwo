@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color: slategray;
+    background-color: #ffffff;
     padding: 10px 20px;
     
   }
@@ -26,8 +26,14 @@ nav {
     cursor: pointer;
     position: absolute;
     left: 200px;
-    top: -1.5px;
+    top: 8px;
+    color:  #61297F;
    
+  }
+
+  .purple {
+    color:  #61297F;
+
   }
 
   .linkedin {
@@ -40,6 +46,10 @@ nav {
     margin-left: 10px;
     font-size: 20px;
     cursor: pointer;
+  }
+
+  .polaris-logo {
+    width: 50px;
   }
   
  

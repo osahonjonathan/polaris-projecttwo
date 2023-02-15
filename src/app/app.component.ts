@@ -42,7 +42,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 export class AppComponent  {
   constructor(  public  _router: Router) { }
 
-  visible=false;
+  visible=true;
 
   togglebar() {
     this.visible = !this.visible;
